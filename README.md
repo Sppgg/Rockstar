@@ -1,5 +1,6 @@
 # Rockstar
 Esta es la creación y práctica de mi primer proyecto en solitario, hacer una réplica de la página de Rockstar
+
 📋 Instrucciones
 1. Configuración del Proyecto
 Crea un repositorio en GitHub para tu proyecto.
