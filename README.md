@@ -44,8 +44,7 @@ This project is a recreation of the Rockstar Games website. The objective is to 
 To get started with this project, follow these steps:
 
 1. **Clone the repository:**
-   git clone https://github.com/yourusername/rockstar-games-website.git
-   
+   git clone git@github.com:Sppgg/Rockstar.git
 
 2. **Navigate to the project directory:**
    cd rockstar-games-website
@@ -98,8 +97,6 @@ Contributions are welcome! If you would like to contribute to this project, plea
    git push origin feature/your-feature
    
 5. **Open a Pull Request.**
-
-
 
 I appreciate your contributions and look forward to your participation!
 
