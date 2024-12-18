@@ -4,192 +4,250 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rockstar Games</title>
-    <link rel="icon" href="images/Rockstar_Games_Logo.png">
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" href="images/Rockstar_Games_Logo.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- FUENTES -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
   </head>
   <body>
     <!-- HEADER DESDE AQUÍ -->
-     
-           <header class="header">
 
-           
+    <header>
+      <nav class="mobile-menu">
+        <!--menú hamburguesa -->
+        <div class="menu-icon">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon-label">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li><a href="https://www.rockstargames.com/games">Juegos</a></li>
+              <li>
+                <a href="https://www.rockstargames.com/newswire">Newswire</a>
+              </li>
+              <li><a href="https://www.rockstargames.com/videos">Vídeos</a></li>
+              <li>
+                <a href="https://www.rockstargames.com/downloads">Descargas</a>
+              </li>
+              <li><a href="https://store.rockstargames.com/es">Tienda</a></li>
+              <li>
+                <a href="https://support.rockstargames.com/"
+                  >Asistencia técnica</a
+                >
+              </li>
+              <li>
+                <a
+                  class="button"
+                  href="https://socialclub.rockstargames.com/rockstar-games-launcher"
+                >
+                  Obtener launcher</a
+                >
+              </li>
+              <li>
+                <input
+                  type="search"
+                  name="buscar-en-rockstar-games"
+                  id="Buscar"
+                  placeholder="Buscar en Rockstar games..."
+                />
+                <img
+                  src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/902006563577748c7d58ac9c2bf5e6df.svg"
+                  alt="buscar-en-rockstar-games"
+                />
+              </li>
+              <li></li>
+            </ul>
+          </nav>
+        </div>
 
-      <!--menú hamburguesa -->
-      <div class="menu-icon">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
-        <label for="menu-toggle" class="menu-icon-label">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav class="header-nav">
-        <ul class="nav-list">
-          <li><a href="https://www.rockstargames.com/games">Juegos</a></li>
-          <li><a href="https://www.rockstargames.com/newswire">Newswire</a></li>
-          <li><a href="https://www.rockstargames.com/videos">Vídeos</a></li>
-          <li>
-            <a href="https://www.rockstargames.com/downloads">Descargas</a>
-          </li>
-          <li><a href="https://store.rockstargames.com/es">Tienda</a></li>
-          <li>
-            <a href="https://support.rockstargames.com/">Asistencia técnica</a>
-          </li>
-          <li>
-            <a
-              class="button"
-              href="https://socialclub.rockstargames.com/rockstar-games-launcher"
-            >
-              Obtener launcher</a
-            >
-          </li>
-          <li>
-            <input
-              type="search"
-              name="buscar-en-rockstar-games"
-              id="Buscar"
-              placeholder="Buscar en Rockstar games..."
-            />
-            <img
-              src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/902006563577748c7d58ac9c2bf5e6df.svg"
-              alt="buscar-en-rockstar-games"
-            />
-          </li>
-          <li>
-            
-            </a>
-          </li>
-        </ul>
-      </nav>
-      </div>
-
-      <div class="header-logo">
-      <img
-        class="logo-Rockstar"
-        src="images/main-logo-rockstar.svg"
-        alt="logo-de-Rockstar-games"
-      />  
-      </div> 
+        <div class="header-logo">
+          <img
+            class="logo-Rockstar"
+            src="images/main-logo-rockstar.svg"
+            alt="logo-de-Rockstar-games"
+          />
+        </div>
         <div class="perfil">
-       <a href=""
-              ><img src="images/perfil-usuario.png"
-                alt="perfil-usuario"
-              />   
-        </div> 
-        
+          <a href=""
+            ><img src="images/perfil-usuario.png" alt="perfil-usuario" />
+          </a>
+        </div>
+      </nav>
+
+      <nav class="desktop-menu">
+        <div>
+          <img
+            class="logo-Rockstar"
+            src="images/main-logo-rockstar.svg"
+            alt="logo-de-Rockstar-games"
+          />
+        </div>
+
+        <div>
+          <ul class="nav-list">
+            <li><a href="https://www.rockstargames.com/games">Juegos</a></li>
+            <li>
+              <a href="https://www.rockstargames.com/newswire">Newswire</a>
+            </li>
+            <li><a href="https://www.rockstargames.com/videos">Vídeos</a></li>
+            <li>
+              <a href="https://www.rockstargames.com/downloads">Descargas</a>
+            </li>
+            <li><a href="https://store.rockstargames.com/es">Tienda</a></li>
+            <li>
+              <a href="https://support.rockstargames.com/"
+                >Asistencia técnica</a
+              >
+            </li>
+            <li>
+              <input
+                type="search"
+                name="buscar-en-rockstar-games"
+                id="Buscar"
+                placeholder="Buscar en Rockstar games..."
+              />
+              <img
+                src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/902006563577748c7d58ac9c2bf5e6df.svg"
+                alt="buscar-en-rockstar-games"
+              />
+            </li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div>
+          <a
+            class="button"
+            href="https://socialclub.rockstargames.com/rockstar-games-launcher"
+          >
+            Obtener launcher</a
+          >
+        </div>
+      </nav>
     </header>
+
     <!-- MAIN DESDE AQUÍ -->
     <main class="main">
       <section class="principal">
-        <img src="images/521696_9680712_updates.webp" alt="portada GTA VI"/>
+        <img src="images/521696_9680712_updates.webp" alt="portada GTA VI" />
         <div class="card-hero">
           <h1>Grand Theft Auto VI</h1>
           <h2>Trailer 1</h2>
-          <a class="watch-now">
-            <a class="watch-trailer"
-              href="https://www.rockstargames.com/videos/rkoCtr1r"
-              >WATCH NOW</a
-            >
-           </a>
-           <img class="carrusel" src="images/Scroller.png" alt="carrusel"/>
         </div>
-        </section>
-        <!-- newswire -->
-        <section class="Newswire">
-          <h2>Newswire</h2>
-          <div class="container-newswire">
-            <div class="card">
-              <img
-                src="images/agentsofsabotage.jpg"
-                alt="imagen-agents-of-sabotage"
-              />
-              <h3>GTA Online</h3>
-              <p>3 de diciembre de 2024</p>
-              <h3>
-                GTA Online: Agents of Sabotage disponible el 10 de diciembre
-              </h3>
-            </div>
-            <div class="card">
-              <img
-                src="images/bountybonuses.jpg"
-                alt="imagen-bounty-bonuses"
-              />
-              <h3>GTA Online</h3>
-              <p>5 de diciembre de 2024</p>
-              <h3>
-                Reparte justicia para ganar pasta con las bonificaciones de la
-                oficina de ejecución de finanzas
-              </h3>
-            </div>
-            <div class="card">
-              <img
-                src="images/holidaysale.jpg"
-                alt="imagen-holiday-sale"
-              />
-              <h3>GTA Online</h3>
-              <p>3 de diciembre de 2024</p>
-              <h3>Ofertas festivas de la Rockstar Store</h3>
-            </div>
-            <div class="card">
-              <img src="images/calltoarms.jpg" alt="imagen-call-to-arms" />
-              <h3>GTA Online</h3>
-              <p>3 de diciembre de 2024</p>
-              <h3>
-                Pásatelo genial estas fiestas con Red Dead Online con A las
-                armas: Festivo
-              </h3>
-            </div>
-            <div class="card">
-              <img
-                src="images/the-diamond-casino-heist.jpg"
-                alt="imagen-the-diamond-casino-heist"
-              />
-              <h3>GTA Online</h3>
-              <p>28 de noviembre de 2024</p>
-              <h1>El desafío de los golpes entra en su última semana</h1>
-            </div>
-            <div class="card">
-              <img src="images/GTA-Heist.jpg" alt="online-heists" />
-              <h3>GTA Online</h3>
-              <p>21 de noviembre de 2024</p>
-              <h3>
-                Vuelve a los clásicos con las bonificaciones en las finales de
-                los golpes originales
-              </h3>
-            </div>
-  
-          </div>
-          <a class="view-more" href="https://www.rockstargames.com/newswire"
-              >View More</a
+          <div class="Trailer">
+            <a
+              class="watch-trailer"
+              href="https://www.rockstargames.com/videos/rkoCtr1r"
+              >VER AHORA</a
             >
-        </section>
+          </div>
+          
+            <img class="carrusel" src="images/Scroller.png" alt="carrusel" />
+          </div>
+        </div>
+      </section>
+      <!-- newswire -->
+      <section class="Newswire">
+        <h2>Newswire</h2>
+        <div class="container-newswire">
+          <div class="card">
+            <img
+              src="images/agentsofsabotage.jpg"
+              alt="imagen-agents-of-sabotage"
+            />
+            <h3>GTA Online</h3>
+            <p>3 de diciembre de 2024</p>
+            <h3>
+              GTA Online: Agents of Sabotage disponible el 10 de diciembre
+            </h3>
+          </div>
+          <div class="card">
+            <img src="images/bountybonuses.jpg" alt="imagen-bounty-bonuses" />
+            <h3>GTA Online</h3>
+            <p>5 de diciembre de 2024</p>
+            <h3>
+              Reparte justicia para ganar pasta con las bonificaciones de la
+              oficina de ejecución de finanzas
+            </h3>
+          </div>
+          <div class="card">
+            <img src="images/holidaysale.jpg" alt="imagen-holiday-sale" />
+            <h3>GTA Online</h3>
+            <p>3 de diciembre de 2024</p>
+            <h3>Ofertas festivas de la Rockstar Store</h3>
+          </div>
+          <div class="card">
+            <img src="images/calltoarms.jpg" alt="imagen-call-to-arms" />
+            <h3>GTA Online</h3>
+            <p>3 de diciembre de 2024</p>
+            <h3>
+              Pásatelo genial estas fiestas con Red Dead Online con A las armas:
+              Festivo
+            </h3>
+          </div>
+          <div class="card">
+            <img
+              src="images/the-diamond-casino-heist.jpg"
+              alt="imagen-the-diamond-casino-heist"
+            />
+            <h3>GTA Online</h3>
+            <p>28 de noviembre de 2024</p>
+            <h1>El desafío de los golpes entra en su última semana</h1>
+          </div>
+          <div class="card">
+            <img src="images/GTA-Heist.jpg" alt="online-heists" />
+            <h3>GTA Online</h3>
+            <p>21 de noviembre de 2024</p>
+            <h3>
+              Vuelve a los clásicos con las bonificaciones en las finales de los
+              golpes originales
+            </h3>
+          </div>
+          <div class="view-more">
+            <a href="https://www.rockstargames.com/newswire">View More</a>
+          </div>
+        </div>
+      </section>
 
-        <!-- juegos destacados -->
-        <section class="juegos-destacados">
-          <h2>Juegos destacados</h2>
-          <div class="container-destacados">
-            <div class="card-portada">
-              <img src="images/521696_9680712_updates.webp" alt="imagen-portada-gta-vi" />
-            </div>
-            <div class="card">
-              <img src="images/GTA-V.jpg" alt="imagen-gta-v" />
-            </div>
-            <div class="card">
-              <img src="images/GTA-Online.jpg" alt="imagen-gta-online" />
-            </div>
-            <div class="card">
-              <img src="images/RDR2.jpg" alt="imagen-red-dead-redemption-II" />
-            </div>
-            <div class="card">
-              <img src="images/RDR.jpg" alt="imagen-red-dead-redemption" />
-            </div>
-            <a class="view-more" href="https://www.rockstargames.com/newswire"
-              >View More</a
-            >
+      <!-- juegos destacados -->
+      <section class="juegos-destacados">
+        <h2>Juegos destacados</h2>
+        <div class="container-destacados">
+          <div class="card-portada">
+            <img
+              src="images/521696_9680712_updates.webp"
+              alt="imagen-portada-gta-vi"
+            />
           </div>
-        </section>
-        <!-- newsletter -->
-        <section class="newsletter">
-          <img src="images/main-logo-rockstar.svg" alt="logo-de-Rockstar-games" />
+          <div class="card">
+            <img src="images/GTA-V.jpg" alt="imagen-gta-v" />
+          </div>
+          <div class="card">
+            <img src="images/GTA-Online.jpg" alt="imagen-gta-online" />
+          </div>
+          <div class="card">
+            <img src="images/RDR2.jpg" alt="imagen-red-dead-redemption-II" />
+          </div>
+          <div class="card">
+            <img src="images/RDR.jpg" alt="imagen-red-dead-redemption" />
+          </div>
+          <div class="view-more">
+            <a href="https://www.rockstargames.com/newswire">View More</a>
+          </div>
+        </div>
+      </section>
+      <!-- newsletter -->
+      <section class="newsletter">
+        <div>
+          <img
+            src="images/main-logo-rockstar.svg"
+            alt="logo-de-Rockstar-games"
+          />
+        </div>
+        <div>
           <h2>Suscríbete a la lista de correo de Rockstar Games</h2>
           <p>
             Suscríbete a nuestro boletín de noticias para obtener información
@@ -197,14 +255,14 @@
             eventos especiales, ofertas y mucho más sobre Rockstar Games y sus
             afiliados.
           </p>
-          <button>
-            <a
+        </div>
+        <div>
+          <a
             class="suscribete"
             href="https://signin.rockstargames.com/signin/user-form?cid=rsg"
             >Suscríbete ya</a
           >
-          </button>
-        </section>
+        </div>
       </section>
     </main>
     <footer>
@@ -215,22 +273,65 @@
         <a href="https://www.rockstargames.com/es/community-guidelines"
           >Directrices de la comunidad</a
         >
-        <a
-          href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
-          >Suscríbete</a
-        >
+        <div class="suscribete">
+          <a
+            href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
+            >Suscríbete</a
+          >
+        </div>
       </div>
       <!-- idioma -->
-      <div class="idioma">
+
+      <!-- <div class="idioma">
         <button><span>Selecciona un idioma</span></button>
+      </div>
+
+ -->
+
+      <div class="language-selector">
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle" />
+        <!-- Botón para abrir el menú -->
+        <label for="menu-toggle" class="selector-button">
+          <img src="images/icono-idioma.png" alt="icono de idioma" /> Selecciona
+          un idioma
+        </label>
+        <!-- Menú desplegable -->
+        <nav class="dropdown-menu">
+          <ul>
+            <li>Deutsch</li>
+            <li>English</li>
+            <li>Español</li>
+            <li>Español Latinoamérica</li>
+            <li>Français</li>
+            <li>Italiano</li>
+            <li>日本語</li>
+            <li>한국어</li>
+            <li>Polski</li>
+            <li>Português do Brasil</li>
+            <li>Русский</li>
+            <li>繁體中文</li>
+            <li>简体中文</li>
+          </ul>
+        </nav>
       </div>
       <!-- Redes sociales -->
       <div class="Redes">
-        <a href="https://x.com/rockstargames"><img src="images/icono-X.png" alt="icono de X"></a>
-        <a href="https://www.instagram.com/rockstargames/"><img src="images/icono-IG.png" alt="icono de instagram"></a>
-        <a href="https://www.youtube.com/rockstargames"><img src="images/icono-yt.png" alt="icono de youtube"></a>
-        <a href="https://www.facebook.com/rockstargames"><img src="images/icono-fb.png" alt=""></a>
-        <a href="https://www.twitch.tv/rockstargames"><img src="images/icono-twitch.png" alt="icono de twitch"></a>
+        <a href="https://x.com/rockstargames"
+          ><img src="images/icono-X.png" alt="icono de X"
+        /></a>
+        <a href="https://www.instagram.com/rockstargames/"
+          ><img src="images/icono-IG.png" alt="icono de instagram"
+        /></a>
+        <a href="https://www.youtube.com/rockstargames"
+          ><img src="images/icono-yt.png" alt="icono de youtube"
+        /></a>
+        <a href="https://www.facebook.com/rockstargames"
+          ><img src="images/icono-fb.png" alt=""
+        /></a>
+        <a href="https://www.twitch.tv/rockstargames"
+          ><img src="images/icono-twitch.png" alt="icono de twitch"
+        /></a>
         <!-- textos legales -->
         <div class="legal">
           <a href="https://www.rockstargames.com/es/corpinfo">Corporación</a>
