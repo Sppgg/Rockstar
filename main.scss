@@ -1,0 +1,621 @@
+// Variables
+$primary-color: black;
+$secondary-color: white;
+$font-stack: "Helvetica Now Display";
+$text-color: $secondary-color;
+$background-color: $primary-color;
+$mobile: 768px;
+$desktop: 1024px;
+$tablet: 769px - 1024;
+
+/******************************************************************
+
+
+ * MOBILE *
+
+ 
+ **********/
+
+// Mobile: Máximo 768px.
+// Tablet: Entre 769px y 1024px.
+// PC: Más de 1024px.
+// mobile first
+
+// Reset de estilos
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Estilos del body
+body {
+  font-family: $font-stack;
+  color: $text-color;
+  background-color: $background-color;
+  // background-color: aqua;
+}
+
+// Estilos del header y menú desplegable
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 100%;
+  height: 80px;
+  background-color: $primary-color;
+
+  .header-logo {
+    /* height: 100px; */
+    /* background-color: black; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    img {
+    }
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+    /* height: 100px; */
+    cursor: pointer;
+    .menu-icon-label {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 7px;
+      height: 40%;
+      span {
+        display: block;
+        width: 20px;
+        height: 3px;
+        gap: 10px;
+        background-color: $secondary-color;
+        transition: transform 0.7s, opacity 0.4s;
+      }
+    }
+  }
+  .header-nav {
+    list-style: none;
+    display: none;
+    position: absolute;
+    /* top: 100px; */
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    background-color: $background-color;
+    padding: 10px;
+    /* border-radius: 5px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    cursor: default;
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 10px 0;
+        background-color: $background-color;
+        color: $text-color;
+        font-weight: bold;
+        .search {
+          display: flex;
+        }
+
+        a {
+          color: $text-color;
+          text-decoration: none;
+          width: 100%;
+          height: inherit;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          font-size: 20px;
+          padding: 5px 30px;
+        }
+      }
+    }
+  }
+
+  // desplegar menú hamburguesa
+  .menu-toggle:checked + .menu-icon-label + .header-nav {
+    display: block;
+  }
+}
+
+.desktop-menu {
+  display: none;
+}
+
+input:checked + label span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+input:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input:checked + label span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.perfil {
+  /* width: 30%; */
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  align-items: center;
+  a img {
+    max-width: 100%; // Ajusta el tamaño del icono de perfil si es necesario
+  }
+}
+
+// Main desde aquí
+main {
+  // padding: 20px;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+  }
+  .principal {
+    display: flex;
+    color: white;
+    gap: 30px;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    max-width: 100%;
+
+    .card-hero {
+      display: grid;
+      justify-items: start;
+      margin: 15px;
+
+      .container-trailer {
+        border-radius: 5px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1rem;
+        outline: 2px solid white;
+        outline-offset: -2px;
+        padding: 17px 33px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.15s ease-out;
+        background: border-box;
+        display: block;
+        color: white;
+        text-decoration: none;
+        align-items: center;
+      }
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+        color: $text-color;
+        text-decoration: none;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .carrusel {
+        max-width: 50%;
+        align-items: baseline;
+      }
+    }
+  }
+}
+
+// }
+
+// Estilos para sección de newswire
+.Newswire {
+  width: 100%;
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .container-newswire {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; // Espacio entre tarjetas
+
+    .card {
+      flex: 1 1 100%; // Ocupa todo el ancho en móviles
+      max-width: 200px; // Limita el tamaño en pantallas más grandes
+      margin: 0 auto;
+
+      img {
+        max-width: 100%; // La imagen nunca será más ancha que su contenedor
+        height: auto; // Mantiene la proporción original
+        display: block; // Elimina espacios adicionales
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .view-more {
+      a {
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// Estilos para juegos destacados
+.juegos-destacados {
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .container-destacados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Dos columnas iguales
+    gap: 20px;
+    width: 100%;
+    padding: 0 15px; // Espacio interno para evitar que el contenido toque los bordes
+    margin: 0 auto; // Centra en pantallas grandes
+    box-sizing: border-box;
+
+    .card-portada {
+      grid-column: span 2; // Ocupa ambas columnas
+      background-color: $primary-color;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .card {
+      background-color: $primary-color;
+      grid-column: span 1;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .view-more {
+      grid-column: span 2; // Ocupa ambas columnas
+      text-align: center;
+
+      a {
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Estilos para la newsletter
+.newsletter {
+  padding: 20px;
+  text-align: left;
+  background-color: $primary-color;
+  color: $text-color;
+
+  img {
+    max-width: 100%; // La imagen nunca será más ancha que su contenedor
+    height: auto; // Mantiene la proporción original
+    display: block; // Elimina espacios adicionales
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .suscribete {
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    outline: 2px solid $text-color;
+    outline-offset: -2px;
+    padding: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.15s ease-out;
+    background: border-box;
+    display: block;
+    color: $text-color;
+    text-decoration: none;
+    align-items: center;
+  }
+}
+
+// Estilos del footer
+footer {
+  padding: 40px;
+  background-color: $background-color;
+  color: $text-color;
+
+  .Enlaces {
+    display: grid;
+    justify-items: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .language-selector {
+    position: relative;
+    display: grid;
+    justify-items: start;
+    margin-bottom: 60px;
+
+    /* Estilo del botón */
+    .selector-button {
+      cursor: pointer;
+    }
+
+    /* Estilo del checkbox (oculto pero interactuable) */
+    #menu-toggle {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    /* Estilo del menú desplegable (oculto por defecto) */
+    .dropdown-menu {
+      display: none;
+
+      /* Estilo para la lista de idiomas */
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    #menu-toggle:checked + .selector-button + .dropdown-menu {
+      display: block;
+    }
+  }
+
+  .Redes {
+    justify-content: center;
+  }
+  .legal {
+    display: grid;
+  }
+  .ultima-parte {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 80px;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+// MEDIA QUERIES
+// Mobile: Máximo 768px.
+// Tablet: Entre 769px y 1024px.
+// PC: Más de 1024px.
+
+/* Estilos para pc */
+@media (min-width: $desktop) {
+  .mobile-menu {
+    display: none;
+  }
+  .desktop-menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+    background-color: $background-color;
+    flex-direction: row;
+    align-items: center;
+
+    .header-logo img {
+      max-width: 100px;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 0 15px;
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #fcaf17;
+      color: $background-color;
+      text-decoration: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .principal {
+    display: flex;
+    color: white;
+    gap: 30px;
+    height: auto;
+    align-items: center;
+    flex-flow: wrap;
+    align-content: center;
+    text-decoration: none;
+    max-width: 100%;
+  }
+  .card-hero {
+    display: grid;
+    justify-items: start;
+    margin: 15px;
+  }
+  .container-trailer {
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    outline: white solid 2px;
+    outline-offset: -2px;
+    padding: 17px 33px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.15s ease-out;
+    background: border-box border-box;
+    display: block;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+  }
+  .carrusel {
+    max-width: 100%;
+  }
+  .Newswire {
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    justify-items: start;
+    .container-newswire {
+      display: grid;
+      /* flex-wrap: wrap; */
+      /* gap: 20px; */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 100%;
+      padding: 0px 15px;
+      margin: 0px auto;
+      box-sizing: border-box;
+      justify-items: stretch;
+      .card {
+        flex: 1 1 100%;
+        max-width: 200px;
+        margin: 0px auto;
+      }
+      .view-more {
+        grid-column: span 2;
+        text-align: center;
+      }
+    }
+  }
+  .juegos-destacados {
+    padding: 20px;
+    display: flex;
+    grid-template-columns: repeat(2, 2fr);
+    flex-direction: column;
+    max-width: 100%;
+    .container-destacados {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 100%;
+      padding: 0px 15px;
+      margin: 0px auto;
+      box-sizing: border-box;
+      align-content: stretch;
+      justify-content: space-evenly;
+      align-items: center;
+      justify-items: stretch;
+      .card-portada {
+        grid-column: span 4;
+        background-color: black;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+        /* overflow: hidden; */
+        max-width: 100%;
+      }
+      .card {
+        background-color: black;
+        grid-column: span 1;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+        overflow: hidden;
+        max-width: 100%;
+        max-width: 200px;
+      }
+      .view-more {
+        grid-column: span 4;
+        text-align: center;
+      }
+    }
+  }
+}
